@@ -1,4 +1,4 @@
-package nl.boonsboos.lessonone
+package nl.boonsboos.lessonone.five
 
 /**
  * De manier waarom de opdracht vraag om alles te doen is niet super efficiënt.
@@ -9,11 +9,6 @@ package nl.boonsboos.lessonone
  * Onderaan in deze klasse staat dat uitgewerkt.
  */
 class Five {
-    // nested enum klasse zoals in het playground voorbeeld aangegeven
-    enum class Side {
-        LEFT,
-        RIGHT
-    }
 
     fun square(size: Int): String {
         return this.rectangle(size, size)

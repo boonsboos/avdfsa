@@ -1,7 +1,7 @@
 package nl.boonsboos.test.lessonone
 
-import nl.boonsboos.lessonone.Five
-import nl.boonsboos.lessonone.Five.Side
+import nl.boonsboos.lessonone.five.Five
+import nl.boonsboos.lessonone.five.Side
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 
