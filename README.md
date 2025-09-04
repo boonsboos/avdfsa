@@ -11,7 +11,9 @@ Ik probeer advies te geven waar toepasbaar.
 1. Open het project in IntelliJ.
 2. Selecteer "Run Configuration" optie Test en run.
 
-Nu worden de tests uitgevoerd.
+Nu worden de tests uitgevoerd. 
+Je kan deze task ook uitvoeren "with coverage".
+Er wordt dan regel voor regel uitgelegd wat er getest wordt.
 
 ### Methode 2: via de terminal
 1. Zorg ervoor dat je een versie van de JVM geïnstalleerd hebt.
