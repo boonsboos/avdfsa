@@ -8,19 +8,20 @@ import kotlin.test.assertEquals
 class OneTest {
     val one: One = One()
 
-    val testText = """
-        Text statistieken achterhalen,
-        is met in Kotlin 1.9.10 eenvoudig.
-        En natuurlijk ook in oudere versies zoals:
-        in Kotlin 1.6, Kotlin 1.7, Kotlin 1.8.20 
-        Gebruik de when { ... } om
-        met c.isWhitespace en c.isLetter(),
-        en andere handige functies te tellen
-        hoeveel witruimte, letters, ... er zijn.
-    """.trimIndent()
-
     @Test
     fun testGetStatistics() {
+        // Arrange
+        val testText = """
+            Text statistieken achterhalen,
+            is met in Kotlin 1.9.10 eenvoudig.
+            En natuurlijk ook in oudere versies zoals:
+            in Kotlin 1.6, Kotlin 1.7, Kotlin 1.8.20 
+            Gebruik de when { ... } om
+            met c.isWhitespace en c.isLetter(),
+            en andere handige functies te tellen
+            hoeveel witruimte, letters, ... er zijn.
+        """.trimIndent()
+
         // Act
         val result = one.getStatistics(testText)
 
@@ -34,27 +35,28 @@ class OneTest {
         assertEquals(40, result.nrOfWords)
     }
 
-    val testText2 = """
-        Text statistieken achterhalen,
-        is met Kotlin 1.9.10 eenvoudig.
-        En natuurlijk ook in oudere versies zoals:
-        in Kotlin 1.6, Kotlin 1.7, Kotlin 1.8.20 
-        Gebruik de when { ... } om
-        met c.isWhitespace en c.isLetter(),
-        en andere handige functies te tellen
-        hoeveel witruimte, letters, ... er zijn.
-    """.trimIndent()
-
     @Test
-    fun testGetStatistics2() {
+    fun testGetStatistics_ButTextIsGrammaticallyCorrect() {
+        // Arrange
+        val correctText = """
+            Text statistieken achterhalen,
+            is met Kotlin 1.9.10 eenvoudig.
+            En natuurlijk ook in oudere versies zoals
+            in Kotlin 1.6, Kotlin 1.7, Kotlin 1.8.20 
+            Gebruik de when { ... } om
+            met c.isWhitespace en c.isLetter(),
+            en andere handige functies te tellen
+            hoeveel witruimte, letters, ... er zijn.
+        """.trimIndent()
+
         // Act
-        val result = one.getStatistics(testText2)
+        val result = one.getStatistics(correctText)
 
         // Assert
         assertEquals(8, result.nrOfLines)
         assertEquals(12, result.nrOfDigits)
-        assertEquals(testText2.length, result.textLength)
-        assertEquals(27, result.nrOfOther)
+        assertEquals(correctText.length, result.textLength)
+        assertEquals(26, result.nrOfOther)
         assertEquals(45, result.nrOfWhiteSpace)
         assertEquals(204, result.nrOfLetters)
         assertEquals(39, result.nrOfWords)
