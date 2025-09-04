@@ -22,7 +22,9 @@ class Four {
         return accumulator
     }
 
+    // matcht alles wat NIET a tot z of A to Z is
     private val letterOnlyRegex = Regex("[^a-zA-Z]")
 
+    // vervangt alles wat de regex matcht in de input met lege string
     fun onlyLetters(input: String): String = input.replace(letterOnlyRegex, "")
 }

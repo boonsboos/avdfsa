@@ -5,6 +5,11 @@ De Kotlin-oefeningen uit het lesmateriaal, met unit tests die het gewenste gedra
 Deze repo is bedoeld als voorbeeld, niet als leidraad.
 Ik probeer advies te geven waar toepasbaar.
 
+>[!TIP]
+> De code is bedoeld om als unit behandeld te worden.
+> Er wordt dus geen gebruikersinvoer gebruikt.
+> Mocht je hiermee willen oefenen, pas dan zelf de code aan.
+
 ## Tests runnen
 
 ### Methode 1: met IntelliJ

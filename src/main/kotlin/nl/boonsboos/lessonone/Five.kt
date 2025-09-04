@@ -46,12 +46,11 @@ class Five {
     }
 
     fun christmasTree(size: Int = 4): String {
-        if (size <= 1) return this.christmasTreeOne()
-
-        // width = 1 + 2 every time
-        // max width is therefore height * 2 - 1 except for 1
         val sb = StringBuilder()
         for (i in 0..size) {
+            // width om te printen is altijd height * 2 + 1
+            // 0 * 2 + 1 = 1
+            // 1 * 2 + 1 = 3 enz.
             sb.append(this.spaces(size - i))
             sb.append(this.stars((i * 2) + 1))
         }
@@ -64,20 +63,11 @@ class Five {
         return sb.toString()
     }
 
-    private fun christmasTreeOne(): String {
-        val sb = StringBuilder()
-        sb.append(this.spaces(1))
-        sb.append(this.stars(1))
-        sb.append(this.rectangle(2, 3))
-        return sb.toString()
-    }
-
     fun triangle(height: Int, side: Side): String {
         return when (side) {
             Side.LEFT -> triangleLeft(height)
             Side.RIGHT -> triangleRight(height)
         }
-
     }
 
     private fun triangleLeft(height: Int): String {

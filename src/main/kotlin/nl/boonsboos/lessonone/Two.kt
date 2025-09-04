@@ -1,7 +1,7 @@
 package nl.boonsboos.lessonone
 
 class Two {
-
+    // minimum bedrag aan belasting per box
     private val bracketMinimumTax = listOf<Int>(
         0,
         100,
@@ -11,6 +11,7 @@ class Two {
         142_100
     )
 
+    // minimum aantal om in een bepaalde box te zitten
     private val bracketMinimum = listOf<Int>(
         0,
         5_000,
@@ -20,6 +21,7 @@ class Two {
         1_000_000
     )
 
+    // belastingpercentage per box
     private val bracketTaxRate = listOf<Double>(
         0.0,
         0.08,
@@ -34,6 +36,7 @@ class Two {
         return bracketMinimumTax[bracket] + ((gift - bracketMinimum[bracket]) * bracketTaxRate[bracket])
     }
 
+    // Kan met when, kan ook a.d.h.v. if statements of met de list die we hebben gemaakt
     private fun findBracket(gift: Int): Int =
         when {
             gift >= 1_000_000              -> 5
@@ -43,4 +46,13 @@ class Two {
             gift in 5_000..24_999    -> 1
             else                           -> 0
         }
+
+    /* Voorbeeld met gebruik van de list:
+
+        for (i in 0..bracketMinimum.size) {
+            if (gift < bracketMinimum[i]) return i - 1
+        }
+
+        return 5 // hoogste box
+     */
 }
