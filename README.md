@@ -18,7 +18,7 @@ Ik probeer advies te geven waar toepasbaar.
 
 Nu worden de tests uitgevoerd. 
 Je kan deze task ook uitvoeren "with coverage".
-Er wordt dan regel voor regel uitgelegd wat er getest wordt.
+Er wordt dan regel voor regel bijgehouden wat er getest wordt.
 
 ### Methode 2: via de terminal
 1. Zorg ervoor dat je een versie van de JVM geïnstalleerd hebt.
