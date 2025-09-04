@@ -1,5 +1,7 @@
 package nl.boonsboos.lessonone.seven
 
+import java.time.LocalDateTime
+
 /**
  * Deze opdracht breidt opdracht 6 uit.
  * We kunnen dus een deel van de code van opdracht 6 hergebruiken.
@@ -34,5 +36,16 @@ class Seven {
         }
 
         return sb.toString()
+    }
+
+    fun getStudentAges(students: List<Student>): List<Int> {
+        val ages = mutableListOf<Int>()
+
+        for (student in students) {
+            // gebruik de Java LocalDateTime klasse om het huidige jaar op te halen
+            ages.add(LocalDateTime.now().year - student.yearBorn)
+        }
+
+        return ages
     }
 }
