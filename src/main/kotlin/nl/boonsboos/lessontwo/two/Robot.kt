@@ -1,40 +1,43 @@
 package nl.boonsboos.lessontwo.two
 
-class Robot {
-    var x = 0
-    var y = 0
+/**
+ * @param fieldSize the size of the field the robot can walk on. Coordinates are zero-indexed
+ */
+class Robot(
+    val fieldSize: Int = 100,
+    var x: Int = 0,
+    var y: Int = 0
+)
+{
+    private fun Int.wrappingRobotAddition(add: Int): Int {
+        if (this + add >= fieldSize) {
+            return ((this + add) % fieldSize)
+        }
+        return this + add
+    }
+
+    private fun Int.wrappingRobotSubtraction(sub: Int): Int {
+        if (this - sub < 0) {
+            return fieldSize + ((this - sub) % fieldSize) // zo halen we de min weg
+        }
+        return this - sub
+    }
 
     fun right(steps: Int) {
-        if (x + steps >= 100) {
-            x += (x + steps % 100)
-        } else {
-            x += steps
-        }
+        x = x.wrappingRobotAddition(steps)
     }
 
     fun left(steps: Int) {
-        if (x - steps <= 0) {
-            x -= (x - steps % 100)
-        } else {
-            x -= steps
-        }
+        x = x.wrappingRobotSubtraction(steps)
     }
 
     fun down(steps: Int) {
-        if ( y + steps >= 100) {
-            y += (y + steps % 100)
-        } else {
-            y += steps
-        }
+        y = y.wrappingRobotSubtraction(steps)
     }
 
     fun up(steps: Int) {
-        if (y - steps <= 0) {
-            y -= (y - steps % 100)
-        } else {
-            y -= steps
-        }
+        y = y.wrappingRobotAddition(steps)
     }
 
-    fun getLocation(): String = "($x, $y)"
+    override fun toString(): String = "($x, $y)"
 }
