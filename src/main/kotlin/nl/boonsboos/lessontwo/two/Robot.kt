@@ -2,7 +2,11 @@ package nl.boonsboos.lessontwo.two
 
 /**
  * @param fieldSize the size of the field the robot can walk on. Coordinates are zero-indexed
+ * @param x the x coordinate
+ * @param y the y coordinate
  */
+// Deel 2 van de oefening vraagt om het omzetten van visibility modifiers op de properties.
+// Probeer het uit en probeer de unit test te runnen!
 class Robot(
     val fieldSize: Int = 100,
     var x: Int = 0,
