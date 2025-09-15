@@ -20,7 +20,8 @@ sealed class Property(val address: String, val livingArea: Int, var priceAsked: 
     }
 
     private fun isAccepted(priceOffered: Int): Boolean {
-        require(priceOffered <= 0) {"Prijs mag niet negatief zijn"}
+        require(priceOffered >= 0) {"Prijs mag niet negatief zijn"}
+        if (_allBids.isEmpty()) return true
 
         // Hoogste bod is altijd het eerste
         return priceOffered > _allBids.first().priceOffered
