@@ -22,7 +22,7 @@ class Robot(
 
     private fun Int.wrappingRobotSubtraction(sub: Int): Int {
         if (this - sub < 0) {
-            return fieldSize + ((this - sub) % fieldSize) // zo halen we de min weg
+            return fieldSize + ((this - sub) % fieldSize) // negatieve waarde is gewenst
         }
         return this - sub
     }

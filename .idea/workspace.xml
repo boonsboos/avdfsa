@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52f3f3ad-8348-4006-b043-378e13c0ef30" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/House.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/House.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/HousingType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/HousingType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/Property.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/Property.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.HousingMarketTest.executor": "Run",
+    "Gradle.avdfsa [test].executor": "Run",
+    "git-widget-placeholder": "lesson3",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "configurable.group.editor"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.HousingMarketTest">
+    <configuration name="HousingMarketTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nl.boonsboos.test.lessonthree.HousingMarketTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="kotlin.scripts.KotlinBuildScript...\::Programs:avdfsa:build.gradle.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="kotlin.scripts.KotlinBuildScript...\::Programs:avdfsa:build.gradle.kts" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.avdfsa [test]" />
+      <item itemvalue="Gradle.HousingMarketTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.HousingMarketTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
