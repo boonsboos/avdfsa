@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3f3ad-8348-4006-b043-378e13c0ef30" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/House.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/House.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/HousingType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/HousingType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/Property.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonthree/Property.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/nl/boonsboos/lessonfour/One.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,36 +42,12 @@
   "keyToString": {
     "Gradle.HousingMarketTest.executor": "Run",
     "Gradle.avdfsa [test].executor": "Run",
-    "git-widget-placeholder": "lesson3",
+    "git-widget-placeholder": "main",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.HousingMarketTest">
-    <configuration name="HousingMarketTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true" nameIsGenerated="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;nl.boonsboos.test.lessonthree.HousingMarketTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="kotlin.scripts.KotlinBuildScript...\::Programs:avdfsa:build.gradle.kts" />
       <method v="2">
@@ -86,15 +59,6 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Gradle.avdfsa [test]" />
-      <item itemvalue="Gradle.HousingMarketTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.HousingMarketTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="TaskManager">
     <servers />
